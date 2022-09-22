@@ -1,4 +1,7 @@
 package com.codeup.aughblog.repositories;
 
-public interface BookRepository {
+import com.codeup.aughblog.models.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BookRepository extends JpaRepository<Book, Long> {
 }
